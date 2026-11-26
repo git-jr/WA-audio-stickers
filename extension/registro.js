@@ -16,7 +16,7 @@ function render() {
   const errs = entries.filter((e) => e.level === "error").length;
   const warns = entries.filter((e) => e.level === "warn").length;
   const sessions = new Set(entries.map((e) => e.session)).size;
-  $("summary").textContent = `${entries.length} entradas · ${errs} errores · ${warns} avisos · ${sessions} sesiones`;
+  $("summary").textContent = `${entries.length} entradas · ${errs} erros · ${warns} avisos · ${sessions} sessões`;
 }
 
 function load() {
@@ -27,7 +27,7 @@ $("dl").addEventListener("click", () => {
   const content = JSON.stringify({ exportado: new Date().toISOString(), version: chrome.runtime.getManifest().version, ua: navigator.userAgent, entradas: entries }, null, 1);
   const a = document.createElement("a");
   a.href = URL.createObjectURL(new Blob([content], { type: "application/json" }));
-  a.download = "registro-stickers-con-sonido-" + new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19) + ".json";
+  a.download = "registro-figurinhas-com-som-" + new Date().toISOString().replace(/[:.]/g, "-").slice(0, 19) + ".json";
   a.click();
 });
 $("copy").addEventListener("click", async () => {
@@ -37,11 +37,11 @@ $("copy").addEventListener("click", async () => {
 });
 $("errors").addEventListener("click", () => {
   onlyErrors = !onlyErrors;
-  $("errors").textContent = onlyErrors ? "Ver todo" : "Solo errores";
+  $("errors").textContent = onlyErrors ? "Ver tudo" : "Só erros";
   render();
 });
 $("clear").addEventListener("click", () => {
-  if (!confirm("¿Borrar todo el registro?")) return;
+  if (!confirm("Apagar todo o registro?")) return;
   chrome.storage.local.set({ log: [] }, load);
 });
 chrome.storage.onChanged.addListener((changes) => { if (changes.log) { entries = changes.log.newValue || []; render(); } });

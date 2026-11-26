@@ -1,11 +1,11 @@
-# Herramientas de desarrollo
+# Ferramentas de desenvolvimento
 
-Páginas para probar la extensión sin WhatsApp. Sírvelas desde la raíz del repositorio con un servidor local:
+Páginas para testar a extensão sem o WhatsApp. Sirva-as a partir da raiz do repositório com um servidor local:
 
 ```sh
 python3 -m http.server 8765
 ```
 
-- `http://127.0.0.1:8765/dev/harness.html`: expone `testConvert(url, opciones)` y `testEstimate(url, opciones)`. Convierten un video (por ejemplo, uno servido desde una carpeta local) y comparan el peso estimado con el real.
-- `http://127.0.0.1:8765/dev/ui-test.html`: monta el panel con Trusted Types obligatorio, como en WhatsApp Web. Ábrelo con `window.postMessage({ __waas: "togglePanel" }, location.origin)`.
-- `calibracion/calibracion_desfase.mp4`: contador de milisegundos con un pitido en cada "0". Sirve para medir el desfase entre audio e imagen de un sticker en un celular. Se genera con `generar_calibracion.py`.
+- `http://127.0.0.1:8765/dev/harness.html`: expõe `testConvert(url, opcoes)` e `testEstimate(url, opcoes)`. Convertem um vídeo (por exemplo, um servido de uma pasta local) e comparam o tamanho estimado com o real.
+- `http://127.0.0.1:8765/dev/ui-test.html`: monta o painel com Trusted Types obrigatório, como no WhatsApp Web. Abra-o com `window.postMessage({ __waas: "togglePanel" }, location.origin)`.
+- `calibracao/calibracao_defasagem.mp4`: contador de milissegundos com um apito em cada "0". Serve para medir a defasagem entre áudio e imagem de uma figurinha em um celular. É gerado com `gerar_calibracao.py`.

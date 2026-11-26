@@ -1,0 +1,20 @@
+name: Sugestão
+description: Uma ideia ou melhoria para a extensão.
+title: "[Sugestão] "
+labels: ["enhancement"]
+body:
+  - type: markdown
+    attributes:
+      value: Obrigado pela ideia. Procure antes nos [issues existentes](https://github.com/git-jr/WA-audio-stickers/issues?q=is%3Aissue) para ver se alguém já a propôs; se sim, apoie com um 👍 ou um comentário.
+  - type: textarea
+    id: idea
+    attributes:
+      label: O que você propõe?
+      description: Descreva a ideia e, se for o caso, como você imagina usá-la.
+    validations:
+      required: true
+  - type: textarea
+    id: para-que
+    attributes:
+      label: Para que ela serviria?
+      description: O problema ou a situação que ela resolveria.

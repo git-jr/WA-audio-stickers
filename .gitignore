@@ -1,5 +1,5 @@
-# Esta carpeta también contiene datos privados (copias de WhatsApp, videos, registros de prueba).
-# Por seguridad se ignora TODO y solo se publica lo que está en esta lista.
+# Esta pasta também contém dados privados (cópias do WhatsApp, vídeos, registros de teste).
+# Por segurança, TUDO é ignorado e só é publicado o que está nesta lista.
 /*
 !/.gitignore
 !/.gitattributes
