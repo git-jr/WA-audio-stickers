@@ -1,130 +1,134 @@
-<p align="center"><img src="extension/icons/icono-128.png" width="96" alt=""></p>
+<p align="center"><img src="extension/icons/icone-128.png" width="96" alt=""></p>
 
-<h1 align="center">Stickers con sonido</h1>
+<h1 align="center">Figurinhas com som</h1>
 
-<p align="center">Convierte un video, una imagen o un GIF en un <b>sticker con sonido</b> y envíalo desde <b>WhatsApp Web</b>.<br>Todo se procesa en tu navegador: nada se sube a otro servidor que no sea WhatsApp.</p>
+<p align="center">Transforme um vídeo, uma imagem ou um GIF em uma <b>figurinha com som</b> e envie pelo <b>WhatsApp Web</b>.<br>Tudo é processado no seu navegador: nada é enviado para nenhum servidor além do WhatsApp.</p>
 
-<p align="center"><a href="https://github.com/Shirtep/WA-audio-stickers/releases/latest/download/stickers-con-sonido.zip"><img src="docs/img/boton-descargar.png" width="352" alt="Descargar gratis (ZIP para Chrome, Edge o Brave)"></a></p>
+<p align="center"><a href="https://github.com/git-jr/WA-audio-stickers/releases/latest/download/figurinhas-com-som.zip"><img src="docs/img/botao-baixar.png" width="352" alt="Baixar grátis (ZIP para Chrome, Edge ou Brave)"></a></p>
 
-<p align="center"><a href="#instalación"><img src="docs/img/boton-guia.png" width="282" alt="Guía de instalación"></a> <a href="https://ko-fi.com/shirtep"><img src="docs/img/boton-apoyar.png" width="282" alt="Apoyar en Ko-fi"></a></p>
+<p align="center"><a href="#instalação"><img src="docs/img/botao-guia.png" width="282" alt="Guia de instalação"></a> <a href="https://ko-fi.com/shirtep"><img src="docs/img/botao-apoiar.png" width="282" alt="Apoiar no Ko-fi"></a></p>
 
-<p align="center"><sub>Gratis y sin fines de lucro. Las donaciones son voluntarias.</sub></p>
+<p align="center"><sub>Gratuito e sem fins lucrativos. As doações são voluntárias.</sub></p>
 
-> **Aviso:** proyecto personal, **no oficial**, sin relación con WhatsApp ni con Meta. Usa funciones internas de WhatsApp Web que pueden cambiar en cualquier momento, y activa en tu navegador la función de stickers con sonido, que WhatsApp está probando. Úsalo bajo tu propia responsabilidad.
+> **Tradução:** esta é a versão em **português do Brasil** do projeto [Stickers con sonido](https://github.com/Shirtep/WA-audio-stickers), criado por [Shirtep](https://github.com/Shirtep) (original em espanhol). O código e as ideias são do autor original; aqui só foram traduzidos os textos. O botão **Apoiar** leva ao Ko-fi do autor original.
 
-## Instalación
+> **Aviso:** projeto pessoal, **não oficial**, sem qualquer relação com o WhatsApp ou a Meta. Usa funções internas do WhatsApp Web que podem mudar a qualquer momento e ativa no seu navegador o recurso de figurinhas com som, que o WhatsApp está testando. Use por sua conta e risco.
 
-No hay que ejecutar ningún programa: se carga la carpeta de la extensión en el navegador (Chrome, Edge o Brave de escritorio). **No funciona en Firefox** ni en navegadores basados en él (ver [Requisitos](#requisitos)).
+## Instalação
 
-1. Descarga el [**ZIP de la última versión**](https://github.com/Shirtep/WA-audio-stickers/releases/latest/download/stickers-con-sonido.zip) (también está en la página de [versiones](https://github.com/Shirtep/WA-audio-stickers/releases/latest)).
-2. Descomprímelo en un lugar donde se vaya a quedar, por ejemplo `Documentos`. Obtendrás una carpeta `stickers-con-sonido`.
-   **No la borres ni la muevas después:** el navegador carga la extensión desde ahí.
-3. Abre la página de extensiones: escribe `chrome://extensions` en la barra de direcciones (en Edge, `edge://extensions`).
-4. Activa **Modo de desarrollador** (arriba a la derecha):
+Não é preciso executar nenhum programa: você carrega a pasta da extensão no navegador (Chrome, Edge ou Brave para computador). **Não funciona no Firefox** nem em navegadores baseados nele (veja os [Requisitos](#requisitos)).
 
-   <img src="docs/img/paso1-modo-desarrollador.png" alt="Interruptor Modo de desarrollador activado" width="230">
+1. Baixe o [**ZIP da versão mais recente**](https://github.com/git-jr/WA-audio-stickers/releases/latest/download/figurinhas-com-som.zip) (ele também está na página de [versões](https://github.com/git-jr/WA-audio-stickers/releases/latest)).
+2. Descompacte em um lugar onde ele vá ficar, por exemplo `Documentos`. Você terá uma pasta `figurinhas-com-som`.
+   **Não apague nem mova a pasta depois:** o navegador carrega a extensão a partir dela.
+3. Abra a página de extensões: digite `chrome://extensions` na barra de endereços (no Edge, `edge://extensions`).
+4. Ative o **Modo do desenvolvedor** (no canto superior direito):
 
-5. Pulsa **Cargar extensión sin empaquetar** (en algunas versiones se llama *Cargar descomprimida*):
+   <img src="docs/img/passo1-modo-desenvolvedor.png" alt="Chave Modo do desenvolvedor ativada" width="230">
 
-   <img src="docs/img/paso2-cargar-sin-empaquetar.png" alt="Botón Cargar extensión sin empaquetar" width="420">
+5. Clique em **Carregar sem compactação** (em algumas versões chama-se *Carregar extensão descompactada*):
 
-6. Elige la carpeta `stickers-con-sonido` del paso 2 y pulsa **Seleccionar carpeta**. Aparecerá la extensión:
+   <img src="docs/img/passo2-carregar-sem-compactacao.png" alt="Botão Carregar sem compactação" width="420">
 
-   <img src="docs/img/paso3-extension-instalada.png" alt="Tarjeta de la extensión Stickers con sonido" width="380">
+6. Escolha a pasta `figurinhas-com-som` do passo 2 e clique em **Selecionar pasta**. A extensão vai aparecer:
 
-7. Pulsa el icono del rompecabezas de la barra del navegador y fija **Stickers con sonido** con la chincheta, para tener a mano su icono violeta.
+   <img src="docs/img/passo3-extensao-instalada.png" alt="Cartão da extensão Figurinhas com som" width="380">
 
-Las capturas son de Brave. En Chrome y Edge se ve igual, con otros colores.
+7. Clique no ícone de peça de quebra-cabeça na barra do navegador e fixe **Figurinhas com som** com o alfinete, para deixar o ícone roxo sempre à mão.
 
-**Actualizar:** descarga el ZIP de la nueva versión y reemplaza el contenido de la carpeta `stickers-con-sonido` con el nuevo. Después pulsa el botón de recargar (↻) de la extensión en la página de extensiones. Tus ajustes se conservan.
+As capturas de tela são do Brave. No Chrome e no Edge é igual, mudando só as cores.
 
-**Desinstalar:** pulsa **Quitar** en la página de extensiones y borra la carpeta.
+**Atualizar:** baixe o ZIP da nova versão e substitua o conteúdo da pasta `figurinhas-com-som` pelo novo. Depois clique no botão de recarregar (↻) da extensão na página de extensões. Suas configurações são mantidas.
 
-## Uso
+**Desinstalar:** clique em **Remover** na página de extensões e apague a pasta.
 
-1. Abre [web.whatsapp.com](https://web.whatsapp.com) y entra al chat donde quieres enviar el sticker.
-2. Pulsa el icono violeta de la extensión. El panel tiene tres pestañas, cada una con su formulario:
-   - **Video:** un video con su propio sonido (los pasos de abajo).
-   - **Imagen + audio:** una imagen fija con el sonido que elijas (MP3, M4A, OGG, WAV o el sonido de un video). Recortas el audio con asas sobre su forma de onda y el sticker dura lo que dure ese tramo.
-   - **Video o GIF + audio:** una animación (un video sin su sonido, o un GIF) con otro audio. Si duran distinto, por defecto cada uno dura lo suyo: al tocar el sticker empiezan juntos y terminan por separado. También puedes repetir la animación o dejar quieto su último cuadro hasta que acabe el audio. Cambiar el tramo de audio no obliga a recalcular las opciones.
+## Como usar
 
-   En la pestaña **Video** hay cuatro pasos:
-   1. **Video:** elige un video con sonido.
-   2. **Tramo:** arrastra las asas verdes para marcar el inicio y el fin. El video muestra el cuadro exacto, y **−/+** mueven un cuadro.
-   3. **Formato:** pulsa **Calcular opciones**. Aparece una tabla de resolución × fps con el peso estimado de cada combinación:
+1. Abra o [web.whatsapp.com](https://web.whatsapp.com) e entre na conversa para a qual quer enviar a figurinha.
+2. Clique no ícone roxo da extensão. O painel tem três abas, cada uma com seu formulário:
+   - **Vídeo:** um vídeo com o próprio som (veja os passos abaixo).
+   - **Imagem + áudio:** uma imagem fixa com o som que você escolher (MP3, M4A, OGG, WAV ou o som de um vídeo). Você corta o áudio com alças sobre a forma de onda, e a figurinha dura o tempo desse trecho.
+   - **Vídeo ou GIF + áudio:** uma animação (um vídeo sem o som dele, ou um GIF) com outro áudio. Se as durações forem diferentes, por padrão cada um dura o seu tempo: ao tocar na figurinha, os dois começam juntos e terminam separados. Você também pode repetir a animação ou deixar parado o último quadro até o áudio acabar. Mudar o trecho de áudio não obriga a recalcular as opções.
+
+   Na aba **Vídeo** há quatro passos:
+   1. **Vídeo:** escolha um vídeo com som.
+   2. **Trecho:** arraste as alças verdes para marcar o início e o fim. O vídeo mostra o quadro exato, e os botões **−/+** movem um quadro por vez.
+   3. **Formato:** clique em **Calcular opções**. Aparece uma tabela de resolução × fps com o tamanho estimado de cada combinação:
       - verde: cabe;
-      - amarillo: cabe bajando la calidad;
-      - ✕: no cabe;
-      - ★: la recomendada.
-   4. **Crear y enviar:** opcionalmente escribe el **paquete** y el **autor** (WhatsApp los muestra bajo el sticker), crea el sticker, revisa la vista previa y envíalo.
-3. Desde el celular puedes marcarlo como favorito para volver a usarlo.
+      - amarelo: cabe reduzindo a qualidade;
+      - ✕: não cabe;
+      - ★: a recomendada.
+   4. **Criar e enviar:** se quiser, escreva o **pacote** e o **autor** (o WhatsApp os mostra embaixo da figurinha), crie a figurinha, confira a prévia e envie.
+3. Pelo celular, você pode marcá-la como favorita para usar de novo.
 
-## Límites
+## Limites
 
-| | Límite | Motivo |
+| | Limite | Motivo |
 |---|---|---|
-| Peso del sticker | **1 MB** | El servidor de WhatsApp rechaza archivos más grandes (error 413). |
-| Peso del audio | 1 MB (≈ 10 min) | Límite de WhatsApp Web para el audio del sticker. |
-| Resolución | 64 a 512 px | WhatsApp usa 512 px. Más grande no se ve mejor y pesa más. |
-| Fluidez | hasta 30 fps | WhatsApp solo exige que cada cuadro dure al menos 8 ms. |
+| Tamanho da figurinha | **1 MB** | O servidor do WhatsApp rejeita arquivos maiores (erro 413). |
+| Tamanho do áudio | 1 MB (≈ 10 min) | Limite do WhatsApp Web para o áudio da figurinha. |
+| Resolução | 64 a 512 px | O WhatsApp usa 512 px. Maior que isso não melhora a imagem e aumenta o tamanho. |
+| Fluidez | até 30 fps | O WhatsApp só exige que cada quadro dure pelo menos 8 ms. |
 
-Cuanto más largo es el tramo, menos resolución o fps caben en 1 MB: la tabla del paso 3 muestra qué cabe antes de crear nada.
+Quanto mais longo o trecho, menos resolução ou fps cabem em 1 MB: a tabela do passo 3 mostra o que cabe antes de você criar qualquer coisa.
 
-Quien recibe el sticker necesita una versión de WhatsApp que ya reproduzca stickers con sonido. Si no la tiene, en lugar del sticker verá el aviso *«Recibiste un mensaje que no es compatible con tu versión de WhatsApp»* y tendrá que actualizar WhatsApp para verlo.
+Quem recebe a figurinha precisa de uma versão do WhatsApp que já reproduza figurinhas com som. Se não tiver, em vez da figurinha vai aparecer o aviso *«Você recebeu uma mensagem que não é compatível com a sua versão do WhatsApp»* e será preciso atualizar o WhatsApp para vê-la.
 
-## Privacidad
+## Privacidade
 
-- La conversión del video ocurre en tu navegador.
-- La extensión guarda un **registro de diagnóstico** solo en tu navegador, con los números de teléfono ocultos y sin claves. Puedes verlo, descargarlo o borrarlo desde *Herramientas de prueba* en el panel, o con clic derecho en el icono → *Opciones*.
+- A conversão do vídeo acontece no seu navegador.
+- A extensão guarda um **registro de diagnóstico** apenas no seu navegador, com os números de telefone ocultos e sem senhas ou chaves. Você pode vê-lo, baixá-lo ou apagá-lo em *Ferramentas de teste*, no painel, ou clicando com o botão direito no ícone → *Opções*.
 
 ## Requisitos
 
-- Chrome, Edge o Brave de escritorio, actualizado (usa WebCodecs para codificar el audio). Otros navegadores basados en Chromium, como Opera o Vivaldi, probablemente funcionen, pero no están probados.
-- Una cuenta de WhatsApp abierta en WhatsApp Web.
+- Chrome, Edge ou Brave para computador, atualizado (usa WebCodecs para codificar o áudio). Outros navegadores baseados em Chromium, como Opera ou Vivaldi, provavelmente funcionam, mas não foram testados.
+- Uma conta do WhatsApp aberta no WhatsApp Web.
 
-**No funciona en Firefox** ni en los navegadores basados en él (LibreWolf, Waterfox, Floorp, Zen, Tor Browser…): usan otro sistema de extensiones y no pueden cargarla. Tampoco funciona en Safari ni en navegadores de celular.
+**Não funciona no Firefox** nem nos navegadores baseados nele (LibreWolf, Waterfox, Floorp, Zen, Tor Browser…): eles usam outro sistema de extensões e não conseguem carregá-la. Também não funciona no Safari nem em navegadores de celular.
 
-## ¿No te funciona?
+## Não está funcionando?
 
-Revisa esto antes de reportarlo; resuelve la mayoría de los casos:
+Confira isto antes de reportar; resolve a maioria dos casos:
 
-1. **Al cargarla, el navegador dice que falta el manifiesto (`manifest.json`):** elegiste la carpeta equivocada. Algunos descompresores crean una carpeta dentro de otra: elige la que contiene directamente `manifest.json`.
-2. **La extensión aparece con error o desapareció:** moviste o borraste la carpeta después de instalarla. Vuelve a ponerla donde estaba, o quítala y cárgala de nuevo.
-3. **Pulsas el icono y no pasa nada:** recarga la pestaña de WhatsApp Web (F5). Las pestañas abiertas antes de instalar o actualizar la extensión no la tienen.
-4. **El navegador está desactualizado:** actualízalo (en Chrome: menú ⋮ → Ayuda → Información de Google Chrome) y vuelve a probar.
-5. **Quien lo recibe ve «Recibiste un mensaje que no es compatible con tu versión de WhatsApp»:** el sticker se envió bien, pero su WhatsApp todavía no reproduce stickers con sonido. Tiene que actualizar WhatsApp desde la tienda de su celular. No es un problema de la extensión.
-6. **Tienes una versión antigua de la extensión:** [descarga la última](https://github.com/Shirtep/WA-audio-stickers/releases/latest/download/stickers-con-sonido.zip) y actualiza (ver *Actualizar* en la instalación).
+1. **Ao carregar, o navegador diz que o manifesto (`manifest.json`) está ausente:** você escolheu a pasta errada. Alguns descompactadores criam uma pasta dentro de outra: escolha a que contém diretamente o `manifest.json`.
+2. **A extensão aparece com erro ou sumiu:** você moveu ou apagou a pasta depois de instalar. Coloque-a de volta onde estava, ou remova a extensão e carregue de novo.
+3. **Você clica no ícone e nada acontece:** recarregue a aba do WhatsApp Web (F5). As abas abertas antes de instalar ou atualizar a extensão não a têm.
+4. **O navegador está desatualizado:** atualize-o (no Chrome: menu ⋮ → Ajuda → Sobre o Google Chrome) e tente de novo.
+5. **Quem recebeu vê «Você recebeu uma mensagem que não é compatível com a sua versão do WhatsApp»:** a figurinha foi enviada corretamente, mas o WhatsApp da pessoa ainda não reproduz figurinhas com som. Ela precisa atualizar o WhatsApp pela loja de aplicativos do celular. Não é um problema da extensão.
+6. **Você está com uma versão antiga da extensão:** [baixe a mais recente](https://github.com/git-jr/WA-audio-stickers/releases/latest/download/figurinhas-com-som.zip) e atualize (veja *Atualizar* na instalação).
 
-Si nada de esto lo resuelve, puede ser que tu WhatsApp Web sea distinto: WhatsApp no le da a todos la misma versión al mismo tiempo, y la extensión usa partes internas que pueden cambiar. En ese caso, repórtalo como se explica abajo, con el registro de diagnóstico.
+Se nada disso resolver, pode ser que o seu WhatsApp Web seja diferente: o WhatsApp não entrega a mesma versão para todo mundo ao mesmo tempo, e a extensão usa partes internas que podem mudar. Nesse caso, reporte como explicado abaixo, com o registro de diagnóstico.
 
-## Reportar un problema o sugerir algo
+## Reportar um problema ou sugerir algo
 
-Los reportes y sugerencias se reciben en [**Issues**](https://github.com/Shirtep/WA-audio-stickers/issues/new/choose). Necesitas una cuenta de GitHub (es gratis). Pulsa **New issue** y elige:
+Os reportes e sugestões são recebidos em [**Issues**](https://github.com/git-jr/WA-audio-stickers/issues/new/choose). Você precisa de uma conta do GitHub (é grátis). Clique em **New issue** e escolha:
 
-- **Problema:** algo falla al instalarla o al usarla.
-- **Sugerencia:** una idea o mejora.
+- **Problema:** algo falha ao instalar ou ao usar.
+- **Sugestão:** uma ideia ou melhoria.
 
-Antes, busca en los [issues existentes](https://github.com/Shirtep/WA-audio-stickers/issues?q=is%3Aissue) por si alguien ya lo reportó: si es así, comenta ahí en vez de abrir otro.
+Antes, procure nos [issues existentes](https://github.com/git-jr/WA-audio-stickers/issues?q=is%3Aissue) para ver se alguém já reportou: se sim, comente lá em vez de abrir outro.
 
-Para un **problema**, incluye:
+Para um **problema**, inclua:
 
-- Tu navegador y su versión, y tu sistema (Windows, macOS, Linux).
-- La versión de la extensión (aparece arriba del panel).
-- Qué hiciste, qué esperabas y qué pasó. Una captura ayuda mucho; tapa los chats y números que aparezcan.
-- **El registro de diagnóstico**, si el problema es al usarla:
-  1. Abre el panel, despliega **Herramientas de prueba** al final y pulsa **Diagnóstico**.
-  2. Repite lo que falló.
-  3. Pulsa **Guardar registro…** y adjunta el archivo `.json` al issue (arrástralo al cuadro de texto). Si GitHub no lo acepta, comprímelo en un ZIP.
+- Seu navegador e a versão dele, e seu sistema (Windows, macOS, Linux).
+- A versão da extensão (aparece no topo do painel).
+- O que você fez, o que esperava e o que aconteceu. Uma captura de tela ajuda muito; cubra as conversas e os números que aparecerem.
+- **O registro de diagnóstico**, se o problema acontece ao usar a extensão:
+  1. Abra o painel, expanda **Ferramentas de teste** no final e clique em **Diagnóstico**.
+  2. Repita o que falhou.
+  3. Clique em **Salvar registro…** e anexe o arquivo `.json` ao issue (arraste-o para a caixa de texto). Se o GitHub não aceitar, compacte-o em um ZIP.
 
-  El registro oculta los números de teléfono y no incluye mensajes ni claves, pero sí los nombres de los archivos que elegiste y el nombre del chat al que enviaste el sticker. Ábrelo con un editor de texto y borra o cambia lo que no quieras compartir antes de adjuntarlo.
+  O registro oculta os números de telefone e não inclui mensagens nem senhas, mas inclui os nomes dos arquivos que você escolheu e o nome da conversa para a qual você enviou a figurinha. Abra-o em um editor de texto e apague ou altere o que não quiser compartilhar antes de anexar.
 
-Si el problema es al instalarla, no hace falta el registro: basta con una captura del mensaje de error de la página de extensiones.
+Se o problema é na instalação, não precisa do registro: basta uma captura de tela da mensagem de erro da página de extensões.
 
-## Para desarrolladores
+Problemas de funcionamento que não tenham a ver com a tradução também podem ser reportados no [projeto original](https://github.com/Shirtep/WA-audio-stickers/issues) (em espanhol).
 
-- [`docs/como-funciona.md`](docs/como-funciona.md): cómo se arma un sticker con sonido (protobuf, formato del audio, límites) y cómo trabaja la extensión.
-- [`dev/`](dev/): páginas para probar la conversión sin WhatsApp y el video de calibración de sincronía.
+## Para desenvolvedores
 
-## Licencia
+- [`docs/como-funciona.md`](docs/como-funciona.md): como uma figurinha com som é montada (protobuf, formato do áudio, limites) e como a extensão funciona.
+- [`dev/`](dev/): páginas para testar a conversão sem o WhatsApp e o vídeo de calibração de sincronia.
 
-Uso libre y gratuito, **sin fines comerciales**: puedes usarla, estudiarla, modificarla y compartirla, pero no venderla ni usarla para lucrar. Texto completo en [`LICENSE.md`](LICENSE.md) ([PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)). Se ofrece tal cual, sin garantías.
+## Licença
+
+Uso livre e gratuito, **sem fins comerciais**: você pode usar, estudar, modificar e compartilhar, mas não vender nem usar para obter lucro. Texto completo em [`LICENSE.md`](LICENSE.md) ([PolyForm Noncommercial 1.0.0](https://polyformproject.org/licenses/noncommercial/1.0.0)). Oferecido como está, sem garantias.

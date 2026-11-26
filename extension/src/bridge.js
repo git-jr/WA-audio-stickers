@@ -1,6 +1,6 @@
-// Puente (mundo aislado de la extensión):
-// - guarda el registro en chrome.storage.local (sobrevive a recargas, se ve en la página de registro);
-// - pasa a la página la orden de abrir el panel (botón de la extensión) y avisa al fondo.
+// Ponte (mundo isolado da extensão):
+// - guarda o registro em chrome.storage.local (sobrevive a recarregamentos, aparece na página de registro);
+// - repassa à página a ordem de abrir o painel (botão da extensão) e avisa o background.
 (() => {
   const MAX_ENTRIES = 5000;
   let queue = [];

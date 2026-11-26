@@ -1,4 +1,4 @@
-// Botón de la extensión: abre/cierra el panel dentro de WhatsApp Web.
+// Botão da extensão: abre/fecha o painel dentro do WhatsApp Web.
 const WA_URL = "https://web.whatsapp.com/";
 
 async function logToStorage(level, event, data) {
@@ -12,7 +12,7 @@ async function togglePanelIn(tabId) {
   try {
     await chrome.tabs.sendMessage(tabId, { waas: "togglePanel" });
   } catch (e) {
-    // La pestaña se abrió antes de instalar/recargar la extensión: no tiene los scripts.
+    // A aba foi aberta antes de instalar/recarregar a extensão: ela não tem os scripts.
     await logToStorage("warn", "fondo:pestana-sin-scripts", { error: String(e && e.message || e) });
     await chrome.tabs.reload(tabId);
     pendingOpen.add(tabId);

@@ -1,5 +1,5 @@
-// Registro de eventos y errores (se ejecuta en el mundo de la página).
-// Cada entrada se guarda en memoria y se envía a bridge.js, que la persiste en chrome.storage.
+// Registro de eventos e erros (executa no mundo da página).
+// Cada entrada é guardada na memória e enviada ao bridge.js, que a persiste em chrome.storage.
 (() => {
   const WAAS = (window.WAAS = window.WAAS || {});
   if (WAAS.log) return;
@@ -7,18 +7,18 @@
   WAAS.VERSION = "0.7.2";
   WAAS.sessionId = Math.random().toString(36).slice(2, 10);
   WAAS.entries = [];
-  WAAS.activeRun = null; // id de la operación en curso (crear/enviar)
+  WAAS.activeRun = null; // id da operação em andamento (criar/enviar)
   const MAX_MEM = 3000;
   const listeners = new Set();
 
   function maskIds(s) {
-    // Oculta números largos (teléfonos, ids de grupo) dejando los 3 últimos dígitos.
+    // Oculta números longos (telefones, ids de grupo) deixando os 3 últimos dígitos.
     return s.replace(/\d{7,}/g, (m) => "…" + m.slice(-3));
   }
 
   function sanitize(value, depth = 0) {
     if (value == null) return value;
-    if (depth > 4) return "[profundidad máxima]";
+    if (depth > 4) return "[profundidade máxima]";
     if (value instanceof Error || (value && typeof value === "object" && "stack" in value && "message" in value)) {
       return { name: value.name, message: maskIds(String(value.message)), stack: maskIds(String(value.stack || "")).slice(0, 4000) };
     }
@@ -28,14 +28,14 @@
     if (typeof value === "string") return maskIds(value.length > 3000 ? value.slice(0, 3000) + "…" : value);
     if (typeof value === "number" || typeof value === "boolean") return value;
     if (typeof value === "bigint") return String(value);
-    if (typeof value === "function") return "[función " + (value.name || "anónima") + "]";
+    if (typeof value === "function") return "[função " + (value.name || "anônima") + "]";
     if (Array.isArray(value)) return value.slice(0, 50).map((v) => sanitize(v, depth + 1));
     if (typeof value === "object") {
       const out = {};
       let n = 0;
       for (const k of Object.keys(value)) {
-        if (n++ > 60) { out["…"] = "más claves omitidas"; break; }
-        try { out[k] = sanitize(value[k], depth + 1); } catch (e) { out[k] = "[no legible]"; }
+        if (n++ > 60) { out["…"] = "demais chaves omitidas"; break; }
+        try { out[k] = sanitize(value[k], depth + 1); } catch (e) { out[k] = "[ilegível]"; }
       }
       return out;
     }
@@ -53,9 +53,9 @@
     };
     WAAS.entries.push(entry);
     if (WAAS.entries.length > MAX_MEM) WAAS.entries.splice(0, WAAS.entries.length - MAX_MEM);
-    try { window.postMessage({ __waas: "log", entry }, location.origin); } catch (e) { /* sin bridge */ }
-    // Solo console.debug: console.warn/error harían aparecer el evento en la página de errores de
-    // chrome://extensions como si fuera un fallo de la extensión. El nivel queda en el registro.
+    try { window.postMessage({ __waas: "log", entry }, location.origin); } catch (e) { /* sem bridge */ }
+    // Só console.debug: console.warn/error fariam o evento aparecer na página de erros de
+    // chrome://extensions como se fosse uma falha da extensão. O nível fica guardado no registro.
     console.debug("[WAAS]", level, event, entry.data ?? "");
     for (const l of listeners) { try { l(entry); } catch (e) { /* ignorar */ } }
     return entry;
@@ -68,7 +68,7 @@
   WAAS.onLog = (fn) => { listeners.add(fn); return () => listeners.delete(fn); };
   WAAS.maskIds = maskIds;
 
-  // Ejecuta fn dentro de una "operación" con id propio; registra inicio, fin, duración y error.
+  // Executa fn dentro de uma "operação" com id próprio; registra início, fim, duração e erro.
   WAAS.run = async function (name, fn) {
     const prev = WAAS.activeRun;
     const id = name + "-" + Date.now().toString(36);
@@ -87,7 +87,7 @@
     }
   };
 
-  // Errores globales: se registran si vienen de la extensión o si hay una operación en curso.
+  // Erros globais: são registrados se vierem da extensão ou se houver uma operação em andamento.
   const EXT_MARK = "chrome-extension://";
   window.addEventListener("error", (ev) => {
     const stack = (ev.error && ev.error.stack) || "";
@@ -105,7 +105,7 @@
     log("error", fromExt ? "promesa-rechazada-extension" : "promesa-rechazada-pagina", { reason: r });
   });
 
-  // Pide el registro completo persistido (vía bridge). Devuelve [] si no hay respuesta.
+  // Pede o registro completo persistido (via bridge). Devolve [] se não houver resposta.
   WAAS.getStoredLog = function () {
     return new Promise((resolve) => {
       const reqId = Math.random().toString(36).slice(2);

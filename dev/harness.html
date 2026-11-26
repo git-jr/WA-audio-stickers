@@ -1,7 +1,7 @@
 <!doctype html>
-<html><head><meta charset="utf-8"><title>Prueba de conversión</title></head>
+<html><head><meta charset="utf-8"><title>Teste de conversão</title></head>
 <body>
-<p>Página de prueba de la conversión (no forma parte de la extensión cargada en Chrome).</p>
+<p>Página de teste da conversão (não faz parte da extensão carregada no Chrome).</p>
 <script src="../extension/src/logger.js"></script>
 <script src="../extension/src/convert.js"></script>
 <script>
@@ -16,7 +16,7 @@
     return new File([blob], decodeURIComponent(url.split("/").pop()), { type: blob.type || fallbackType });
   }
 
-  // opts: start, maxDur, mode, fps, side, syncMs y, para las pestañas nuevas:
+  // opts: start, maxDur, mode, fps, side, syncMs e, para as abas novas:
   //   kind ("video" | "gif" | "image"), audioUrl, audioStart, audioDur, fit, still.
   window.testConvert = async function (url, opts = {}) {
     const kind = opts.kind || "video";
